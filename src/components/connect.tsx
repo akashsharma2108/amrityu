@@ -13,7 +13,7 @@ import {
 import { Close }  from "@mui/icons-material";
 import { makeStyles } from "@mui/styles";
 import { useState } from "react";
-import connecUS from "../assets/connecUS.jpg";
+import connecUS from "../assets/connecUS.webp";
 import "../App.css"
 
 const useStyles = makeStyles({

@@ -18,9 +18,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import fg from "../assets/fg.png";
 import amrityu from "../assets/amrityu.svg";
-import setBack from "../assets/setBack.jpg";
-import rekH from "../assets/rekH.jpg";
-import serBACkM from "../assets/serBACkM.png";
+import setBack from "../assets/setBack.webp";
+import serBACkM from "../assets/serBACkM.webp";
 
 const testimonials = [
   {

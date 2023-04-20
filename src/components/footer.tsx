@@ -7,12 +7,12 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { Instagram, Twitter, Facebook, YouTube } from "@mui/icons-material";
-import icon from "../assets/icon.png"
-import instagram from "../assets/instagram.png"
-import facebook  from "../assets/facebook.png"
-import youtube  from "../assets/youtube.png"
-import connecUS from "../assets/connecUS.jpg";
-import mail from "../assets/mail.png"
+import icon from "../assets/icon.webp"
+import instagram from "../assets/instagram.webp"
+import facebook  from "../assets/facebook.webp"
+import youtube  from "../assets/youtube.webp"
+import connecUS from "../assets/connecUS.webp";
+import mail from "../assets/mail.webp"
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
@@ -41,7 +41,7 @@ const Footer: React.FC<FooterProps> = () => {
       >
         {/* Logo */}
         <Box sx={{ width:isMobile? "100%" : "25%" , display : "flex" , justifyContent : isMobile? "center": "left"}}>
-          {isMobile ? (<img src={icon} alt="Company logo" width="25s0px"  />):(<img src={icon} alt="Company logo"  width="200px" />)}
+          {isMobile ? (<img src={icon} alt="Company logo" width="250px"  />):(<img src={icon} alt="Company logo"  width="200px" />)}
         </Box>
 
         {/* Links */}

@@ -3,18 +3,16 @@ import {
   AppBar,
   IconButton,
   Toolbar,
-  Typography,
   Button,
   MenuItem,
   Menu,
   useMediaQuery,
   useTheme,
     Box,
-  SvgIcon
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import icon from "../assets/icon.png"
-//import nail from "../assets/nail.svg"
+import icon from "../assets/icon.webp"
+
 
 
 

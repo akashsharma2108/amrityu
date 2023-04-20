@@ -7,10 +7,10 @@ import {
   List,
   ListItem,
 } from "@mui/material";
-import about1 from "../assets/about1.jpg";
+import about1 from "../assets/about1.webp";
 import fg from "../assets/fg.png";
-import aboutus from "../assets/aboutus.jpg";
-import aboutus2 from "../assets/aboutus2.png";
+import aboutus from "../assets/aboutus.webp";
+import aboutus2 from "../assets/aboutus2.webp";
 import "../App.css";
 
 interface AboutProps {

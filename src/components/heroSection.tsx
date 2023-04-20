@@ -5,19 +5,18 @@ import { useMediaQuery } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import hero1 from "../assets/hero1.jpg"
-import hero2 from "../assets/hero2.jpg"
-import hero3 from "../assets/hero3.jpg"
-import hero4 from "../assets/hero4.jpg"
-import hero5 from "../assets/hero5.jpg"
-import phero1 from "../assets/phero1.png"
-import phero2 from "../assets/phero2.png"
-import phero3 from "../assets/phero3.png"
-import phero4 from "../assets/phero4.png"
-import phero5 from "../assets/phero5.png"
-import herotopimg from  "../assets/herotopimg.png";
-import heroUp from  "../assets/heroUP.png";
-import { Height } from "@mui/icons-material";
+import hero1 from "../assets/hero1.webp"
+import hero2 from "../assets/hero2.webp"
+import hero3 from "../assets/hero3.webp"
+import hero4 from "../assets/hero4.webp"
+import hero5 from "../assets/hero5.webp"
+import phero1 from "../assets/phero1.webp"
+import phero2 from "../assets/phero2.webp"
+import phero3 from "../assets/phero3.webp"
+import phero4 from "../assets/phero4.webp"
+import phero5 from "../assets/phero5.webp"
+import herotopimg from  "../assets/herotopimg.webp";
+import heroUp from  "../assets/heroUP.webp";
 
 
 
