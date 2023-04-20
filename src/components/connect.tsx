@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useRef } from 'react';
 import {
   Box,
   Container,
@@ -14,6 +14,7 @@ import { Close }  from "@mui/icons-material";
 import { makeStyles } from "@mui/styles";
 import { useState } from "react";
 import connecUS from "../assets/connecUS.webp";
+import emailjs from "@emailjs/browser"
 import "../App.css"
 
 const useStyles = makeStyles({
@@ -35,6 +36,7 @@ interface sooterProps {
 }
 
 const ContactUs: React.FC<sooterProps> = () => {
+  const form: React.RefObject<HTMLFormElement> = useRef<HTMLFormElement>(null);
   const isMobile = useMediaQuery("(max-width: 960px)");
   const classes = useStyles();
   const [formData, setFormData] = useState({
@@ -69,6 +71,14 @@ const ContactUs: React.FC<sooterProps> = () => {
     setFormErrors(formValidation);
     if (Object.values(formValidation).every((error) => !error)) {
       setSubmitSuccess(true);
+      if (form.current) {
+      emailjs.sendForm('service_p44l17t', 'template_094lijj', form.current, 'ub1QrD8c3klvN2pH8')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
+      }
       setFormData({
         name: "",
         email: "",
@@ -189,7 +199,7 @@ const ContactUs: React.FC<sooterProps> = () => {
               mt: "1rem",
             }}
           >
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
               <TextField
                 label="Name"
                 variant="outlined"

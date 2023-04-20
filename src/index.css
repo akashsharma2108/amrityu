@@ -32,7 +32,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Lora', serif;
-  scroll-behavior: smooth;
 }
 
 h1 {
