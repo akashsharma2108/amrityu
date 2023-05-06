@@ -34,8 +34,8 @@ const Footer: React.FC<FooterProps> = () => {
           "& a": {
             color: "white",
             textDecoration: "none",
-            marginRight: isMobile ? "0" : "2rem",
-            marginBottom: isMobile ? "1rem" : "0",
+           // marginRight: isMobile ? "0" : "2rem",
+           // marginBottom: isMobile ? "1rem" : "0",
           },
         }}
       >
@@ -50,12 +50,12 @@ const Footer: React.FC<FooterProps> = () => {
             Quick Links
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "center", flexDirection: isMobile ? "column": "row", }}>
-            {isMobile ? (<><Link href="/" sx={{ fontFamily: "'Lora', serif",}}>• Home</Link>
-            <Link href="#about" sx={{ fontFamily: "'Lora', serif",}}>• About</Link>
-            <Link href="#services" sx={{ color : "white", fontFamily: "'Lora', serif", }}>• Services</Link>
-          </>):(<><Link href="/" sx={{ fontFamily: "'Lora', serif",}}>Home</Link><Link href="#about" sx={{ fontFamily: "'Lora', serif",}}>About</Link>
-            <Link href="#services" sx={{ color : "white",fontFamily: "'Lora', serif", }}>Services</Link>
-            <Link href="#contact" sx={{ fontFamily: "'Lora', serif",}} >Connect</Link>
+            {isMobile ? (<><Link href="/" sx={{ fontFamily: "'Lora', serif", mb: "1rem"}}>• Home</Link>
+            <Link href="#about" sx={{ fontFamily: "'Lora', serif",mb: "1rem"}}>• About</Link>
+            <Link href="#services" sx={{ color : "white", fontFamily: "'Lora', serif", mb: "1rem"}}>• Services</Link>
+          </>):(<><Link href="/" sx={{ fontFamily: "'Lora', serif",mr: "2rem"}}>Home</Link><Link href="#about" sx={{ fontFamily: "'Lora', serif", mr: "2rem"}}>About</Link>
+            <Link href="#services" sx={{ color : "white",fontFamily: "'Lora', serif",mr: "2rem" }}>Services</Link>
+            <Link href="#contact" sx={{ fontFamily: "'Lora', serif",mr: "2rem"}} >Connect</Link>
         </>)}
 
           </Box>
@@ -86,19 +86,19 @@ const Footer: React.FC<FooterProps> = () => {
               ml: isMobile ? "-1rem": "0",
             }}
           >
-            <IconButton aria-label="Instagram" sx={{ color: '#C13584' }}>
+            <IconButton aria-label="Instagram" sx={{ color: '#C13584', marginLeft: "-20px" }} href="https://instagram.com/amrityu_nikita?igshid=NTc4MTIwNjQ2YQ==">
               <img src={instagram} alt="insta" width={40}></img>
             </IconButton>
             {/* <IconButton aria-label="Twitter" sx={{ color: 'darkblue' }}>
               <Twitter />
             </IconButton> */}
-            <IconButton aria-label="Facebook" sx={{ color: 'blue' }}>
+            <IconButton aria-label="Facebook" sx={{ color: 'blue' }} href="https://www.facebook.com/profile.php?id=100092153407553&mibextid=LQQJ4d">
             <img src={facebook} alt="insta" width={40}></img>
             </IconButton>
             <IconButton aria-label="YouTube" sx={{ color: 'red' }}>
             <img src={youtube} alt="insta" width={40}></img>
             </IconButton>
-            <IconButton aria-label="Gmail" sx={{ color: 'red' }}>
+            <IconButton aria-label="Gmail" sx={{ color: 'red' }}  href="mailto:amrityuwithnikitasharma@gmail.com">
             <img src={mail} alt="mail" width={40}></img>
             </IconButton>
           </Box>
